@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.14)
+project(matrix_parallel C)
+
+set(CMAKE_C_STANDARD 11)
+
+add_compile_options(-O2 -Wall -Wextra)
+
+find_package(Threads REQUIRED)
+
+add_executable(matrix_parallel src/main.c)
+
+target_link_libraries(matrix_parallel Threads::Threads m)

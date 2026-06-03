@@ -1,0 +1,14 @@
+# Build do CMake
+build/
+
+# Executáveis
+*.exe
+*.out
+
+# VS Code
+.vscode/
+
+# Arquivos temporários
+*.o
+*.obj
+*.d
